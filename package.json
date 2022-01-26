@@ -1,7 +1,10 @@
 {
-  "name": "react-spotify-muse",
-  "version": "1.0.0",
+  "name": "@kevinelberger/react-spotify-muse",
+  "version": "0.1.0",
   "description": "A React component to display what you're listening to",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/kevinelberger"
+  },
   "scripts": {
     "rollup": "rollup -c"
   },
