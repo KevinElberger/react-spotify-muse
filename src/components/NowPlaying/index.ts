@@ -1,1 +1,1 @@
-import { NowPlaying } from './NowPlaying'
+export { NowPlaying } from './NowPlaying'

@@ -1,1 +1,1 @@
-export * from './NowPlaying';
+export * from './NowPlaying'
