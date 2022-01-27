@@ -1,5 +1,11 @@
 import React from 'react'
+import Logo from './logo.svg'
 
 export const NowPlaying = () => {
-  return <div>Player component</div>
+  return (
+    <div>
+      <Logo />
+      Player component
+    </div>
+  )
 }
