@@ -16,5 +16,5 @@
     "emitDeclarationOnly": true,
     "baseUrl": "."
   },
-  "exclude": ["svgMock**", "**/*.test.tsx"]
+  "exclude": ["dist", "node_modules", "svgMock**", "**/*.test.tsx"]
 }

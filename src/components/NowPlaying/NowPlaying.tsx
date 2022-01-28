@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getNowPlaying } from '../../../lib/spotify'
+import { getNowPlaying } from '../../spotify'
 import { SpotifyApiError, SpotifyApiResponse, Track } from '../../types'
 import Logo from './logo.svg'
 

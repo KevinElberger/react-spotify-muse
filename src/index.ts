@@ -1,1 +1,1 @@
-export * from './components'
+export { NowPlaying } from './components'
