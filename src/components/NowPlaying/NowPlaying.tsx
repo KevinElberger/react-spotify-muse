@@ -60,7 +60,7 @@ export const NowPlaying: React.FC<Props> = ({
   }, [token])
 
   return (
-    <div className="rsm-container" aria-label="Now playing on Spotify">
+    <div id="rsm" className="rsm-container" aria-label="Now playing on Spotify">
       <Logo className={currentTrack && 'active'} />
 
       <div className="content">

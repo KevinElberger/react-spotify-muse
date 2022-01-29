@@ -1,6 +1,6 @@
 {
   "name": "@kevinelberger/react-spotify-muse",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A React component to display what you're listening to",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/kevinelberger"
