@@ -5,14 +5,34 @@ import Logo from './logo.svg'
 import './styles.css'
 
 interface Props {
+  /**
+   * Spotify API OAuth Token
+   */
   token: string
+  /**
+   * If enabled, will poll the Spotify API in set intervals
+   * and will display any updates
+   */
+  usePolling: boolean
+  /**
+   * If enabled, will also fetch recently played tracks
+   */
   showRecentTracks?: boolean
+  /**
+   * Event that is emitted whenever the Spotify API returns
+   * an error. Use this event to know when to refresh the
+   * Spotify API token. See here for details:
+   * https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recently-played
+   */
   onError: (error: SpotifyApiError) => void
 }
+
+const twoMinutes = 1000 * 60 * 2
 
 export const NowPlaying: React.FC<Props> = ({
   token,
   onError,
+  usePolling,
   showRecentTracks = false,
 }: Props): JSX.Element => {
   const [loading, setLoading] = useState<boolean>(true)
@@ -33,11 +53,14 @@ export const NowPlaying: React.FC<Props> = ({
   useEffect(() => {
     if (token) fetchData()
     else setLoading(false)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    if (usePolling && token) {
+      setInterval(fetchData, twoMinutes)
+    }
   }, [token])
 
   return (
-    <div className="rsm-container">
+    <div className="rsm-container" aria-label="Now playing on Spotify">
       <Logo className={currentTrack && 'active'} />
 
       <div className="content">
