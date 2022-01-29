@@ -37,6 +37,7 @@ export const NowPlaying: React.FC<Props> = ({
 }: Props): JSX.Element => {
   const [loading, setLoading] = useState<boolean>(true)
   const [currentTrack, setCurrentTrack] = useState<Track>()
+  const [intervalId, setIntervalId] = useState<ReturnType<typeof setInterval>>()
 
   const fetchData = async () => {
     const response = await getNowPlaying(token)
@@ -54,9 +55,14 @@ export const NowPlaying: React.FC<Props> = ({
     if (token) fetchData()
     else setLoading(false)
 
+    clearInterval(intervalId as ReturnType<typeof setInterval>)
+
     if (usePolling && token) {
-      setInterval(fetchData, twoMinutes)
+      const id = setInterval(fetchData, twoMinutes)
+      setIntervalId(id)
     }
+
+    return () => clearInterval(intervalId as ReturnType<typeof setInterval>)
   }, [token])
 
   return (
