@@ -12,6 +12,9 @@ export interface Track {
   preview_url: string
   uri: string
   images: Image[]
+  external_urls: {
+    spotify: string
+  }
 }
 
 interface Artist {
@@ -20,6 +23,9 @@ interface Artist {
   name: string
   type: string
   uri: string
+  external_urls: {
+    spotify: string
+  }
 }
 
 interface Image {
