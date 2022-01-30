@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NowPlaying } from '@kevinelberger/react-spotify-muse'
+import { NowPlaying } from 'react-spotify-muse'
 import logo from './logo.svg'
 import './App.css'
 
