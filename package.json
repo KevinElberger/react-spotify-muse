@@ -3,7 +3,7 @@
   "version": "0.2.4",
   "description": "A React component to display what you're listening to",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/kevinelberger"
+    "@kevinelberger:registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
