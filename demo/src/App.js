@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NowPlaying } from '@kevinelberger/react-spotify-muse'
+import logo from './logo.svg'
 import './App.css'
 
 function App() {
@@ -13,6 +14,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="logo">
+        <img src={logo} alt="react spotify muse logo" />
+      </div>
+
       <div className="token-container">
         <input
           type="text"

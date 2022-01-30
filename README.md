@@ -2,9 +2,7 @@
 
 A small, simple and clean React component to help you show others what you're listening to at the moment.
 
-## Getting Started
-
-### Installation
+## Installation
 
 Install the package
 
@@ -45,7 +43,7 @@ Overriding styles is simple. For simplicity, use the root element's ID value to 
 
 ```css
 #rsm {
-  ...
+  ...;
 }
 ```
 

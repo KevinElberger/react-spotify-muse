@@ -42,10 +42,11 @@ export const NowPlaying: React.FC<Props> = ({
   const fetchData = async () => {
     const response = await getNowPlaying(token)
     const isPlaying = response.status !== 204
+
     if (response.error) {
       onError(response)
-    }
-    if (isPlaying) {
+      clearInterval(intervalId as ReturnType<typeof setInterval>)
+    } else if (isPlaying) {
       setCurrentTrack((response as SpotifyApiResponse).item)
     }
     setLoading(false)
