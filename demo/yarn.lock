@@ -1279,11 +1279,6 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@kevinelberger/react-spotify-muse@^0.2.4":
-  version "0.2.4"
-  resolved "https://npm.pkg.github.com/download/@kevinelberger/react-spotify-muse/0.2.4/98d7f62088b4cb1a87e965c78855adc7efa5a284a4d1d2ed3d08a111e9f0302a#5ce24def5547900af3745af81cbc199b3ec80c84"
-  integrity sha512-0cOKjLaDhydMLTnHEPzlKy3zeZp9vyh/Fg5khyy4R9yny5WVAN8E/h+V5/Y3rDWzNIFnurdpT9meMjuM3MwQ9Q==
-
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -6958,6 +6953,11 @@ react-scripts@5.0.0:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-spotify-muse@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/react-spotify-muse/-/react-spotify-muse-0.2.5.tgz#06d76606e8ddf8a2c9fe5bebf1f4bcc1d60481fe"
+  integrity sha512-SG59/t9t3vDrwUrIcN91APPQN6NbyLr9qohL/Z5T80DJGCB3TLDwd2jLdbSZF7YaRhRjvSFp4aCNZ/ll7YreTQ==
 
 react@^17.0.2:
   version "17.0.2"
