@@ -18,15 +18,17 @@ function App() {
         <img src={logo} alt="react spotify muse logo" />
       </div>
 
-      <div className="token-container">
-        <input
-          type="text"
-          value={token}
-          onChange={handleChange}
-          placeholder="Spotify token goes here"
-        />
+      <div className="wrapper">
+        <div className="token-container">
+          <input
+            type="text"
+            value={token}
+            onChange={handleChange}
+            placeholder="Enter a Spotify Web API token"
+          />
+        </div>
+        <NowPlaying onError={handleError} token={token} />
       </div>
-      <NowPlaying onError={handleError} token={token} />
     </div>
   )
 }
