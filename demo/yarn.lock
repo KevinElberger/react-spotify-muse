@@ -1279,10 +1279,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@kevinelberger/react-spotify-muse@^0.1.3":
-  version "0.1.3"
-  resolved "https://npm.pkg.github.com/download/@kevinelberger/react-spotify-muse/0.1.3/586bd22730e73bfd7e057aa8709fed6ce0de705a3c048be63e85ba3277756392#76025b777d551bf0045a4a40dbd225d909b29cff"
-  integrity sha512-GGjBRw57JUl9ZRcPLRkZ/NM/mX+wgfcSYH+N3hDYyTYhsJLmRNfkcbVhx2j+T2q33tSUkOPCuPlLpjnL0n8fuA==
+"@kevinelberger/react-spotify-muse@^0.2.4":
+  version "0.2.4"
+  resolved "https://npm.pkg.github.com/download/@kevinelberger/react-spotify-muse/0.2.4/98d7f62088b4cb1a87e965c78855adc7efa5a284a4d1d2ed3d08a111e9f0302a#5ce24def5547900af3745af81cbc199b3ec80c84"
+  integrity sha512-0cOKjLaDhydMLTnHEPzlKy3zeZp9vyh/Fg5khyy4R9yny5WVAN8E/h+V5/Y3rDWzNIFnurdpT9meMjuM3MwQ9Q==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
