@@ -5,6 +5,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/kevinelberger"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinelberger/react-spotify-muse.git"
+  },
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest",
