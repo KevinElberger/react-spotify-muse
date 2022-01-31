@@ -4,6 +4,9 @@
 
 # React Spotify Muse
 
+[![Build Size](https://img.shields.io/bundlephobia/minzip/react-spotify-muse?label=bundle%20size&style=flat&colorA=000000&colorB=000000)](https://bundlephobia.com/result?p=react-spotify-muse)
+[![Version](https://img.shields.io/npm/v/react-spotify-muse?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/react-spotify-muse)
+
 A small, simple, and clean React component to help you show others what you're listening to at the moment.
 
 ## Installation
