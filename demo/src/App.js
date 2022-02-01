@@ -13,7 +13,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App bg-gray-500">
       <div className="logo">
         <img src={logo} alt="react spotify muse logo" />
       </div>
@@ -24,6 +24,7 @@ function App() {
             type="text"
             value={token}
             onChange={handleChange}
+            className="bg-gray-400 border-gray-300 text-gray-100"
             placeholder="Enter a Spotify Web API token"
           />
         </div>

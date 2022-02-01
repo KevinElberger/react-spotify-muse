@@ -24,14 +24,14 @@
 }
 
 input[type='text'] {
+  margin: 0;
   outline: none;
   font-size: 18px;
   min-width: 350px;
   border-radius: 4px;
   padding: 15px 24px;
-  background: var(--bg);
-  color: var(--text);
-  border: 2px solid var(--bg-dark-2);
+  border-width: 2px;
+  border-style: solid;
 }
 
 input[type='text']:focus {
