@@ -24,7 +24,7 @@ module.exports = {
       DEFAULT: {
         css: {
           color: theme('colors.gray.200'),
-          'h2,h3,h4': {
+          'h1,h2,h3,h4': {
             color: theme('colors.gray.100'),
             'scroll-margin-top': spacing[32],
           },

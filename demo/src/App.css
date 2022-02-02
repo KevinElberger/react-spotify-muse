@@ -4,13 +4,7 @@
 }
 
 .wrapper {
-  padding: 16px;
-  display: flex;
-  margin: 0 auto;
   max-width: 672px;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .token-container {
@@ -43,7 +37,6 @@ input[type='text']::placeholder {
 }
 
 .logo {
-  top: 32px;
+  top: 24px;
   left: 24px;
-  position: absolute;
 }
