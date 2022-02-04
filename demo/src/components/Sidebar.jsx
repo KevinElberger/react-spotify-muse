@@ -4,7 +4,7 @@ import logo from '../logo.svg'
 
 export const Sidebar = () => {
   return (
-    <div className="p-4 flex flex-col w-[275px] border-r border-solid border-gray-300">
+    <div className="p-4 py-10 flex flex-col w-[275px] border-r border-solid border-gray-300 h-full max-h-screen sticky top-0">
       <div className="logo">
         <img src={logo} alt="react spotify muse logo" />
       </div>
@@ -21,7 +21,9 @@ export const Sidebar = () => {
           Contributing
         </Link>
 
-        <div className="font-bold prose text-sm px-2.5 py-8">Components</div>
+        <div className="font-bold text-sm px-2.5 py-8 text-gray-200">
+          Components
+        </div>
       </div>
     </div>
   )

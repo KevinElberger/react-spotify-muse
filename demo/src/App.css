@@ -1,10 +1,9 @@
 .App {
-  height: 100vh;
-  display: flex;
+  grid-template-columns: 0.85fr 2.5fr;
 }
 
 .wrapper {
-  max-width: 672px;
+  max-width: 760px;
 }
 
 .token-container {

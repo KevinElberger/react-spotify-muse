@@ -32,6 +32,7 @@ body {
 
 #root {
   display: flex;
+  font-size: 16px;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -48,4 +49,20 @@ input[type='email'] {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+pre {
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px !important;
+}
+
+code,
+a {
+  color: var(--color-yellow);
+}
+
+.prose {
+  line-height: 1.75;
+  color: var(--text);
 }

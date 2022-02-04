@@ -26,11 +26,13 @@ When you've successfully authenticated with the Spotify API, pass your token int
 OAuth tokens do expire after a period of time. When the token becomes expired, the `onError` event will emit an error object with the `status` value as `401`. You can use this as a way to refresh your token, but it is preferable to keep track of the `expires_in` value associated with your token instead.
 
 ```jsx
+import React from 'react'
 import { NowPlaying } from 'react-spotify-muse'
 
-...
-render() {
-  <NowPlaying token={token} onError={handleError}>
+const App = () => {
+  const token = 'aExjz492zo04uc...'
+
+  return <NowPlaying token={token} />
 }
 ```
 

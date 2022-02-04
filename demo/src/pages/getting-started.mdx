@@ -1,0 +1,27 @@
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
+import bash from 'react-syntax-highlighter/dist/esm/languages/prism/jsx'
+import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { installation, basicUsage } from '../data/getting-started.js'
+
+# Getting Started
+
+React Spotify Muse is a straightforward and simple way to show others what you're currently listening to on Spotify.
+
+## Quick Start
+
+{/* prettier-ignore */}
+<SyntaxHighlighter language="bash" style={nord}>{installation}</SyntaxHighlighter>
+
+In order to display the currently playing track from Spotify, you'll need a Spotify OAuth web API token.
+If you're unfamiliar with how to get a token, follow Spotify's <a href="https://developer.spotify.com/documentation/general/guides/authorization/" target="_blank">Authorization Guide</a>. Keep in mind that the OAuth tokens do expire after a period of time. It will be up to you to keep the token refreshed.
+
+<br />
+
+After installing the package, import the `NowPlaying` component into your app.
+
+<br />
+
+{/* prettier-ignore */}
+<SyntaxHighlighter language="jsx" style={nord}>{basicUsage}</SyntaxHighlighter>
+
+Voila! You should now be seeing what is currently being listened to on the account that's associated with the Spotify OAuth token.

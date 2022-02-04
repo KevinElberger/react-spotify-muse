@@ -24,9 +24,30 @@ module.exports = {
       DEFAULT: {
         css: {
           color: theme('colors.gray.200'),
-          'h1,h2,h3,h4': {
+          h1: {
+            fontSize: 36,
+            marginTop: '0',
+            lineHeight: 1.5,
+            fontWeight: 700,
+            marginBottom: 32,
             color: theme('colors.gray.100'),
             'scroll-margin-top': spacing[32],
+          },
+          h2: {
+            fontSize: 24,
+            marginTop: 48,
+            fontWeight: 700,
+            marginBottom: 24,
+            lineHeight: 1.33,
+            color: theme('colors.gray.100'),
+          },
+          h3: {
+            fontSize: 20,
+            marginTop: 32,
+            fontWeight: 700,
+            marginBottom: 12,
+            lineHeight: 1.6,
+            color: theme('colors.gray.100'),
           },
         },
       },
