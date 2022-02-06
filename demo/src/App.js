@@ -6,6 +6,7 @@ import bash from 'react-syntax-highlighter/dist/esm/languages/prism/bash'
 import { Sidebar } from './components/Sidebar'
 import GettingStarted from './pages/getting-started.mdx'
 import Contributing from './pages/contributing.mdx'
+import ScrollToTop from './components/ScrollToTop.js'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="App bg-gray-500 grid h-full">
       <BrowserRouter>
+        <ScrollToTop />
         <Sidebar />
 
         <div className="wrapper p-10 w-full prose min-h-screen">
