@@ -16,15 +16,18 @@
   text-decoration: none;
 }
 
-.rsm-container .content .name a {
+.rsm-container .content .name a,
+.rsm-container .content .name {
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 19px;
 }
 
-.rsm-container .content .artist a {
+.rsm-container .content .artist a,
+.rsm-container .content .artist {
   font-size: 15px;
   color: #979797;
+  font-weight: 500;
 }
 
 .rsm-container svg:not(.active) {

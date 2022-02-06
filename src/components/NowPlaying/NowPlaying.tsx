@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { getNowPlaying } from '../../spotify'
-import { SpotifyApiError, SpotifyApiResponse, Track } from '../../types'
+import {
+  SpotifyApiError,
+  SpotifyApiResponse,
+  Track,
+  Interval,
+} from '../../types'
 import Logo from './logo.svg'
 import './styles.css'
 
-interface Props {
+interface NowPlayingProps {
   /**
    * Spotify API OAuth Token
    */
@@ -25,19 +30,28 @@ interface Props {
    * https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recently-played
    */
   onError: (error: SpotifyApiError) => void
+  /**
+   * An initial display value. This will be overwritten once
+   * a valid token is provided
+   */
+  initialTrack?: {
+    name: string
+    artist: string
+  }
 }
 
 const twoMinutes = 1000 * 60 * 2
 
-export const NowPlaying: React.FC<Props> = ({
+export const NowPlaying: React.FC<NowPlayingProps> = ({
   token,
   onError,
   usePolling,
+  initialTrack,
   showRecentTracks = false,
-}: Props): JSX.Element => {
+}: NowPlayingProps): JSX.Element => {
   const [loading, setLoading] = useState<boolean>(true)
   const [currentTrack, setCurrentTrack] = useState<Track>()
-  const [intervalId, setIntervalId] = useState<ReturnType<typeof setInterval>>()
+  const [intervalId, setIntervalId] = useState<Interval>()
 
   const fetchData = async () => {
     const response = await getNowPlaying(token)
@@ -45,7 +59,7 @@ export const NowPlaying: React.FC<Props> = ({
 
     if (response.error) {
       onError(response)
-      clearInterval(intervalId as ReturnType<typeof setInterval>)
+      clearInterval(intervalId as Interval)
     } else if (isPlaying) {
       setCurrentTrack((response as SpotifyApiResponse).item)
     }
@@ -56,23 +70,29 @@ export const NowPlaying: React.FC<Props> = ({
     if (token) fetchData()
     else setLoading(false)
 
-    clearInterval(intervalId as ReturnType<typeof setInterval>)
+    clearInterval(intervalId as Interval)
 
     if (usePolling && token) {
       const id = setInterval(fetchData, twoMinutes)
       setIntervalId(id)
     }
 
-    return () => clearInterval(intervalId as ReturnType<typeof setInterval>)
+    return () => clearInterval(intervalId as Interval)
   }, [token])
 
   return (
     <div id="rsm" className="rsm-container" aria-label="Now playing on Spotify">
-      <Logo className={currentTrack && 'active'} />
+      <Logo className={(currentTrack || initialTrack) && 'active'} />
 
       <div className="content">
         {loading && 'Fetching Tunes...'}
-        {!loading && !currentTrack && 'Not Playing'}
+        {!loading && !currentTrack && !initialTrack && 'Not Playing'}
+        {!loading && !currentTrack && initialTrack && (
+          <>
+            <span className="name">{initialTrack.name}</span>
+            <span className="artist">{initialTrack.artist}</span>
+          </>
+        )}
         {!loading && currentTrack && (
           <>
             <span className="name">

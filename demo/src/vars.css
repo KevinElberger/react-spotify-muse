@@ -1,7 +1,10 @@
 :root {
   --text: #fff;
   --bg: #1b1b1b;
-  --color-yellow: #eab308;
+  --color-white: #fff;
+  --color-rust: rgb(203, 75, 22);
+  --color-mustard: rgb(255, 176, 59);
+  --color-burlywood: rgb(220, 207, 143);
   --text-secondary: #979797;
   --bg-dark-1: #242424;
   --bg-dark-2: #373738;

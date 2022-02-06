@@ -40,3 +40,5 @@ export interface SpotifyApiError {
     message: string
   }
 }
+
+export type Interval = ReturnType<typeof setInterval>

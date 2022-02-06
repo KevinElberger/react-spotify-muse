@@ -51,15 +51,46 @@ input[type='email'] {
   box-sizing: inherit;
 }
 
+blockquote {
+  padding-left: 24px;
+  border-radius: 8px;
+  position: relative;
+  color: var(--color-mustard);
+}
+
+blockquote::before {
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  content: '';
+  display: block;
+  border-radius: 3px;
+  position: absolute;
+  background: var(--color-rust);
+}
+
 pre {
   padding: 24px;
   border-radius: 12px;
   margin-bottom: 24px !important;
 }
 
-code,
+p code {
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-weight: bold;
+  background: #23262b;
+  color: var(--color-burlywood);
+}
+
 a {
-  color: var(--color-yellow);
+  color: var(--color-mustard);
+  transition: color 0.2s ease-in;
+}
+
+a:hover {
+  color: var(--color-white);
 }
 
 .prose {

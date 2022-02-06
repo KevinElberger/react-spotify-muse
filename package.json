@@ -1,6 +1,6 @@
 {
   "name": "react-spotify-muse",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "A React component to display what you're listening to",
   "repository": {
     "type": "git",
