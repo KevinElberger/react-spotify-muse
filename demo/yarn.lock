@@ -7811,10 +7811,10 @@ react-router@6.2.1:
   dependencies:
     history "^5.2.0"
 
-react-spotify-muse@^0.2.5:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/react-spotify-muse/-/react-spotify-muse-0.2.5.tgz#06d76606e8ddf8a2c9fe5bebf1f4bcc1d60481fe"
-  integrity sha512-SG59/t9t3vDrwUrIcN91APPQN6NbyLr9qohL/Z5T80DJGCB3TLDwd2jLdbSZF7YaRhRjvSFp4aCNZ/ll7YreTQ==
+react-spotify-muse@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-spotify-muse/-/react-spotify-muse-0.3.0.tgz#81f0de385d6bbfe02df7a16a5d14ab892ab5298a"
+  integrity sha512-qZG4qucGsFFnEiFMuLGS+iw2fUbfYoLArZBhbZiFunwVesL6wvWJ0e/IFsWQw0yHlImOsAXXUy3TLUamitl26Q==
 
 react-syntax-highlighter@^15.4.5:
   version "15.4.5"

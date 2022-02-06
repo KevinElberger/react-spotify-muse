@@ -44,7 +44,7 @@
     "react-dom": "^17.0.2",
     "react-refresh": "^0.11.0",
     "react-router-dom": "^6.2.1",
-    "react-spotify-muse": "^0.2.5",
+    "react-spotify-muse": "^0.3.0",
     "react-syntax-highlighter": "^15.4.5",
     "reading-time": "^1.5.0",
     "resolve": "^1.20.0",
