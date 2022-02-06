@@ -76,7 +76,8 @@ pre {
   margin-bottom: 24px !important;
 }
 
-p code {
+p code,
+li code {
   border-radius: 4px;
   padding: 3px 8px;
   font-weight: bold;
@@ -91,6 +92,12 @@ a {
 
 a:hover {
   color: var(--color-white);
+}
+
+ol {
+  margin: 12px 0 12px 32px;
+  padding: unset;
+  list-style: decimal;
 }
 
 .prose {

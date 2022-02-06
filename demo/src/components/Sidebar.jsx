@@ -16,7 +16,7 @@ export const Sidebar = () => {
           Getting Started
         </Link>
         <Link
-          to="/"
+          to="/contributing"
           className="text-gray-100 font-bold text-lg p-2 rounded px-2.5 hover:bg-gray-400 mt-2">
           Contributing
         </Link>
