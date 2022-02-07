@@ -29,6 +29,10 @@ body {
   margin: 0;
 }
 
+body.no-scroll {
+  overflow-y: hidden;
+}
+
 #root {
   display: flex;
   font-size: 16px;

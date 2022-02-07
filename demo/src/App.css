@@ -39,3 +39,12 @@ input[type='text']::placeholder {
   top: 24px;
   left: 24px;
 }
+
+@media (max-width: 1023px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+  .wrapper {
+    max-width: 100%;
+  }
+}

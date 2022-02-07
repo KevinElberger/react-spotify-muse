@@ -19,6 +19,15 @@ module.exports = {
       fontFamily: {
         sans: ['IBM Plex Sans', ...fontFamily.sans],
       },
+      keyframes: {
+        slideInRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        'slide-in-right': 'slideInRight 0.3s cubic-bezier(.2,.6,.35,1)',
+      },
     },
     typography: (theme) => ({
       DEFAULT: {

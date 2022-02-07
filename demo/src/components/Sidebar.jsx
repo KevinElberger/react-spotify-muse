@@ -26,7 +26,7 @@ export const Sidebar = () => {
         </div>
 
         <Link
-          to="/contributing"
+          to="/components/now-playing"
           className="text-gray-100 font-bold text-lg p-2 rounded px-2.5 hover:bg-gray-400 mt-2">
           NowPlaying
         </Link>
