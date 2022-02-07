@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
+import classNames from 'classnames'
 import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx'
 import bash from 'react-syntax-highlighter/dist/esm/languages/prism/bash'
 import { Sidebar } from './components/Sidebar'
@@ -31,13 +32,15 @@ function App() {
       </div>
 
       <BrowserRouter>
-        {isComponentVisible && (
-          <div
-            ref={ref}
-            className="h-full fixed bg-gray-400 z-10 animate-slide-in-right">
-            <Sidebar />
-          </div>
-        )}
+        <div
+          ref={ref}
+          className={classNames({
+            'h-full fixed bg-gray-400 z-10 animate-slide-in-right': true,
+            block: isComponentVisible,
+            hidden: !isComponentVisible,
+          })}>
+          <Sidebar />
+        </div>
 
         <ScrollToTop />
 
